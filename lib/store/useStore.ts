@@ -12,11 +12,11 @@ interface NotesState {
     delNote: (index: number) => void
 }
 
-export const useNotes = create<NotesState>()(persist((set) => (
+export const useNotes = create<NotesState>()(persist(set => (
     {
-    notes: [],
-    addNote: (note) => (set((state) => ({ notes: [...state.notes, note] }))),
-    delNote: (index) => (set((state) => ({ notes: [...state.notes.filter((note, idx) => (idx != index))] })))
-}),
-{"name": "notes",}
+        notes: [],
+        addNote: (note) => (set((state) => ({ notes: [...state.notes, note] }))),
+        delNote: (index) => (set((state) => ({ notes: [...state.notes.filter((note, idx) => (idx != index))] })))
+    }),
+    { "name": "notes", }
 ))

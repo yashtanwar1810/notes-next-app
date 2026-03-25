@@ -15,7 +15,6 @@ const Home = () => {
 
     return (
         <>
-            <Header />
             <div className="flex flex-col gap-2 mx-auto p-6 mt-12 rounded-md w-[80%] bg-blue-100">
                 <h1 className="text-4xl text-blue-600 font-black text-center">Take Notes</h1>
                 <input
