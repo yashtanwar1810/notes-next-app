@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { useNotes } from "../lib/store/useStore"
-import { Header } from "../lib/components"
 
 const Home = () => {
 
